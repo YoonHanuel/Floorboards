@@ -1,0 +1,21 @@
+{
+  "id": "delta-is-not-cause",
+  "title": "Difference does not establish cause",
+  "observed": [
+    "At t0, the lamp is on and the floor is dry.",
+    "At t1, the lamp is off and the floor is wet."
+  ],
+  "concluded": "The leak turned off the lamp.",
+  "floorboard": "Temporal adjacency and correlated change were promoted into a causal explanation.",
+  "missing_evidence": [
+    "A mechanism connecting the wet floor to the lamp state.",
+    "A controlled observation where one variable changes without the other.",
+    "Any exclusion of a third cause affecting both."
+  ],
+  "ferret": {
+    "intervention": "Reproduce the wet floor while independently holding the lamp circuit state constant.",
+    "if_claim": "The lamp reliably changes state as a consequence of the wet-floor intervention under controlled conditions.",
+    "if_floorboard": "The wet floor and lamp state can vary independently; congratulations on inventing causality."
+  },
+  "tags": ["causality", "delta", "sequence", "generic"]
+}
