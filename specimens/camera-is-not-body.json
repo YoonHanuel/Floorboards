@@ -1,0 +1,21 @@
+{
+  "id": "camera-is-not-body",
+  "title": "Observer position is not body position",
+  "observed": [
+    "At t0, the reported position is (10, 10).",
+    "At t1, the reported position is (400, 900).",
+    "The human changed only remote-view/camera state between observations."
+  ],
+  "concluded": "The player physically moved roughly a thousand tiles.",
+  "floorboard": "A field named position was treated as though its referent were permanently bound to the physical character body.",
+  "missing_evidence": [
+    "Which entity or observer the position field actually describes in each controller state.",
+    "Whether physical character coordinates changed at all."
+  ],
+  "ferret": {
+    "intervention": "Hold the character body fixed, move only the camera/view, and observe every exposed position-like field.",
+    "if_claim": "The body-corresponding position changes with the camera despite the controlled stationary character.",
+    "if_floorboard": "A view/observer field changes while a separately observed body position remains fixed."
+  },
+  "tags": ["identity", "observer", "controller", "threadbridge-shaped"]
+}
