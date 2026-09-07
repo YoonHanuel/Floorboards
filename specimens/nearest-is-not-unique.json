@@ -1,0 +1,20 @@
+{
+  "id": "nearest-is-not-unique",
+  "title": "Nearest is not necessarily unique",
+  "observed": [
+    "Anchor A is 5 units from the observer.",
+    "The public result reports nearest = A."
+  ],
+  "concluded": "A is the unique nearest anchor.",
+  "floorboard": "A deterministic first candidate was mistaken for proof of geometric uniqueness.",
+  "missing_evidence": [
+    "Whether another candidate exists at the same distance.",
+    "Whether the representation can expose ties at all."
+  ],
+  "ferret": {
+    "intervention": "Place anchor B exactly 5 units from the observer and query again.",
+    "if_claim": "The representation establishes a unique winner despite the controlled tie, which means something else is constraining candidacy.",
+    "if_floorboard": "A remains the deterministic first candidate while B appears as an equal-distance peer; uniqueness was invented by the reader."
+  },
+  "tags": ["geometry", "ties", "determinism", "wayfarer-shaped"]
+}
